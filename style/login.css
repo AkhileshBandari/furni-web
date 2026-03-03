@@ -1,75 +1,253 @@
-    /* body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    } */
-    
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
+    background: linear-gradient(135deg, #054125, #0b6b43);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .login-container {
-        background: #ffffff;
-        padding: 20px 30px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        width: 300px;
-        align-items: center;
-        
-    }
-    section{
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        padding-top: 40px;
-    }
-    .login-container h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        color: #333;
-    }
+/* Login Card */
+.login-container {
+    background: #ffffff;
+    padding: 40px;
+    width: 380px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
 
-    .login-container label {
-        font-size: 14px;
-        color: #555;
-    }
+.login-container h2 {
+    margin-bottom: 25px;
+    color: #054125;
+    font-weight: 700;
+}
 
-    .login-container input {
+/* Inputs */
+.login-container input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.login-container input:focus {
+    outline: none;
+    border-color: #054125;
+    box-shadow: 0 0 5px rgba(5, 65, 37, 0.4);
+}
+
+/* Button */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #054125;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #0b6b43;
+    transform: translateY(-2px);
+}
+
+/* Optional small text */
+.login-container .extra {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #666;
+}
+
+.login-container .extra a {
+    color: #054125;
+    text-decoration: none;
+    font-weight: 500;
+}
+.error-message {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+@media (max-width: 1200px) {
+
+    .container4 {
         width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+        padding: 40px 20px;
     }
 
-    .login-container button {
-        width: 100%;
-        padding: 10px;
-        background-color: #0a581a;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
+    .container3 {
+        padding: 50px 20px;
     }
 
-    .login-container button:hover {
-        background-color: #0056b3;
+    .popular-product {
+        padding-left: 20px;
+        gap: 20px;
+        flex-wrap: wrap;
     }
 
-    .login-container p {
+}
+@media (max-width: 992px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .cover-container {
+        flex-direction: column;
         text-align: center;
-        margin-top: 15px;
+        padding: 40px 20px;
+    }
+
+    .cover-container .button-container {
+        justify-content: center;
+    }
+
+    .container_2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container_2 .child2 {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container4 {
+        flex-direction: column;
+    }
+
+    .container4 .parent2 {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .popular-product {
+        justify-content: center;
+    }
+
+    .blog-container {
+        justify-content: center;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    .container_2 .child2 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .container3 .parent1 .child2 {
+        flex-direction: column;
+    }
+
+    .container3 .parent2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container4 .parent1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .container4 .parent1 .img3 {
+        transform: none;
+    }
+
+    .subscribe-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-links {
+        gap: 40px;
+    }
+
+}
+@media (max-width: 576px) {
+
+    body {
         font-size: 14px;
     }
 
-    .login-container a {
-        color: #007bff;
-        text-decoration: none;
+    header {
+        margin: 10px;
     }
 
-    .login-container a:hover {
-        text-decoration: underline;
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
+
+    .cover-container {
+        padding: 30px 15px;
+    }
+
+    .cover-container .info p {
+        font-size: 14px;
+    }
+
+    .container_2 {
+        padding: 30px 15px;
+    }
+
+    .blog-card {
+        max-width: 100%;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .form-group input,
+    .form-group button {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+}

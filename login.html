@@ -1,66 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="./style/login.css">
 </head>
-<link rel="stylesheet" href="./style/login.css">
-<link rel="stylesheet" href="./style/style.css">
-<script src="https://kit.fontawesome.com/d7e3b792ba.js" crossorigin="anonymous"></script>
 <body>
-    
-    <div class="bg">
-        <header>
-            <div class="logo">
-                <h1>Furni.</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./shop.html">Shop</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About us</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="./blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">Contact us</a>
-                    </li>
-                    <li>
-                        <a href="./login.html"><i class="fa-solid fa-user"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-<section>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="/submit-login" method="POST">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username" required>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+<div class="login-container">
+    <h2>Login</h2>
 
-            <button type="submit">Login</button>
-        </form>
-        <p>Don't have an account? <a href="/register">Sign up</a></p>
+    <form onsubmit="loginUser(event)">
+        <input type="email" id="login-email" placeholder="Email" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <p id="login-error" class="error-message"></p>
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="extra">
+        Don't have an account? <a href="./register.html">Register</a>
     </div>
-</section>
+</div>
 
+<script src="./JS/auth.js"></script>
+<script src="./JS/index.js"></script>
 </body>
-
 </html>

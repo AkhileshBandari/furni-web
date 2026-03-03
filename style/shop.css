@@ -199,3 +199,172 @@ footer {
 .footer-bottom a :hover {
     color: #777;
 }
+@media (max-width: 1200px) {
+
+    .container4 {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .container3 {
+        padding: 50px 20px;
+    }
+
+    .popular-product {
+        padding-left: 20px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .cover-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .cover-container .button-container {
+        justify-content: center;
+    }
+
+    .container_2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container_2 .child2 {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container4 {
+        flex-direction: column;
+    }
+
+    .container4 .parent2 {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .popular-product {
+        justify-content: center;
+    }
+
+    .blog-container {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    .container_2 .child2 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .container3 .parent1 .child2 {
+        flex-direction: column;
+    }
+
+    .container3 .parent2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container4 .parent1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .container4 .parent1 .img3 {
+        transform: none;
+    }
+
+    .subscribe-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-links {
+        gap: 40px;
+    }
+
+}
+@media (max-width: 576px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        margin: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cover-container {
+        padding: 30px 15px;
+    }
+
+    .cover-container .info p {
+        font-size: 14px;
+    }
+
+    .container_2 {
+        padding: 30px 15px;
+    }
+
+    .blog-card {
+        max-width: 100%;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .form-group input,
+    .form-group button {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+}

@@ -20,14 +20,11 @@
                     <li>
                         <a href="./index.html">Home</a>
                     </li>
-                    <li>
+                    <li class="nav-shop">
                         <a href="./shop.html">Shop</a>
                     </li>
                     <li>
                         <a href="about.html">About us</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
                     </li>
                     <li>
                         <a href="./blog.html">Blog</a>
@@ -35,11 +32,14 @@
                     <li>
                         <a href="./contact.html">Contact us</a>
                     </li>
-                    <li>
+                    <li class="nav-login">
                         <a href="./login.html"><i class="fa-solid fa-user"></i></a>
                     </li>
+                    <li class="nav-cart">
+                        <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
                     <li>
-                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#" id="logoutBtn">Logout</a>
                     </li>
                 </ul>
             </nav>
@@ -57,7 +57,7 @@
                         dolor tempor tristique.
                     </p>
                     <div class="button-container">
-                        <a href="#">Shop now</a>
+                        <a href="./shop.html">Shop now</a>
                         <a href="#" class="explore">explore</a>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
 
     </div>
 
-            <!-- /end of banner -->
+    <!-- /end of banner -->
     <div class="container_2">
         <div class="child1">
             <h1>
@@ -90,10 +90,11 @@
         <div class="child2">
             <div class="prdabt">
                 <div><a href=""><img src="./assects/product1.png" alt="" height="230" width="230"></a>
-                    <div  class="imgabt">
+                    <div class="imgabt">
                         <h3>Nodic Chair</h3>
                         <h2>$50.00</h2>
-                    <div class="plusbutton">+</div>
+                        <div class="plusbutton add-to-cart" data-id="1" data-name="Nordic Chair" data-price="50"
+                            data-image="./assects/product1.png">+</div>
                     </div>
                 </div>
             </div>
@@ -102,7 +103,8 @@
                     <div class="imgabt">
                         <h3>Kurzo Aero Chair</h3>
                         <h2>$78.00</h2>
-                        <div class="plusbutton">+</div>
+                        <div class="plusbutton add-to-cart" data-id="2" data-name="Kurzo Aero Chair" data-price="78"
+                            data-image="./assects/product-2.png">+</div>
                     </div>
                 </div>
             </div>
@@ -111,7 +113,8 @@
                     <div class="imgabt">
                         <h3>Ergonomic Chair</h3>
                         <h2>$43.00</h2>
-                        <div class="plusbutton">+</div>
+                        <div class="plusbutton add-to-cart" data-id="3" data-name="Ergonomic Chair" data-price="43"
+                            data-image="./assects/product-3.png">+</div>
                     </div>
                 </div>
             </div>
@@ -160,7 +163,7 @@
             <img src="./assects/why.jpg" alt="">
         </div>
     </div>
-        <!-- end of the container3 -->
+    <!-- end of the container3 -->
     <div class="container4">
         <div class="parent1">
             <div class="img1"><img src="./assects/img1.jpg" alt="" height="500px" width="400px"></div>
@@ -263,10 +266,12 @@
         </div>
     </div>
     <footer>
-        <div class="endlogo"><h2>Furni.</h2></div>
+        <div class="endlogo">
+            <h2>Furni.</h2>
+        </div>
         <div class="footer-top">
             <div class="footer-left">
-                
+
                 <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam
                     ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant
                 </p>
@@ -319,4 +324,5 @@
 </body>
 <script src="https://kit.fontawesome.com/d7e3b792ba.js" crossorigin="anonymous"></script>
 <script src="./JS/index.js"></script>
+<script src="./JS/auth.js"></script>
 </html>
